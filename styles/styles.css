@@ -1,6 +1,14 @@
 /**This is try comment on css**/
+
+:root {
+    --border: 1px;
+    --color: steelblue;
+    --text-align: center;
+    --padding: 1rem;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: var(--color);
     padding: 10px;
 }
 
@@ -11,13 +19,13 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: var(--color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: var(--border) solid var(--color);
     padding: 4px;
     box-shadow: 0 0 10px;
 }
@@ -33,11 +41,11 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(75, 78, 110, 0.158);
-    padding: 1rem;
+    border: var(--border) solid rgba(75, 78, 110, 0.158);
+    padding: var(--padding);
     background-color: #dbedf8;
     color: #333;
-    text-align: center;
+    text-align: var(--text-align);
 }
 
 aside img {
@@ -47,6 +55,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    border-top: var(--border) solid #000;
+    text-align: var(--text-align);
 }
