@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #FF9F3E;
+    --secondary-color: #4464AD;
+    --accent1-color: #FFFFFF;
+    --accent2-color: #37392D;
+}
+
+
+h1 {
+    
+    color: var(--primary-color);
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+
+p {
+    color: var(--accent2-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+section{
+    width: 80%;
+    margin-left: 10%;
+}
+
+section img{
+    display: block;
+    margin-left: 20%;
+    width:60%;
+
+}
+
+footer {
+    background-color: var(--accent2-color);
+}
+
+footer p {
+    color: var(--accent1-color);
+    padding-top: 3%;
+    text-align: center;
+}
+
+footer img {
+    width: 45px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+footer nav {
+    text-decoration: none;
+}
+
+/*Class Selectors*/
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+}
+
+.hero h1 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    font-size: 300%;
+    background-color: var(--accent1-color);
+}
+.stats {
+    position: absolute;
+    bottom: 40px;
+    background-color: var(--accent1-color);
+    display: block;
+    width: 80%;
+    left: 10%
+}
+
+.stats img {
+    float: right;
+    width: 30%;
+    opacity: 100%;
+}
