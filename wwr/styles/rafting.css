@@ -33,7 +33,8 @@ figcaption {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-align: center;
-    padding: 8px;
+    padding-top: 8px;
+    padding-left: 75px;
 }
 
 header{
@@ -51,11 +52,6 @@ header img{
     width: auto;
 }
 
-header nav{
-    grid-column-start: 3;
-    text-align: right;
-}
-
 section{
     width: 80%;
     margin-left: 10%;
@@ -71,7 +67,7 @@ section img{
 footer {
     background-color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 40px 1fr;
     align-content: center;
 }
 
@@ -86,8 +82,8 @@ footer nav {
     text-decoration: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    justify-items: center;
-    grid-column-start: 3;
+    justify-items: right;
+    grid-column-start: 4;
 }
 
 footer img {
@@ -96,6 +92,8 @@ footer img {
 
 /*Class Selectors*/
 .navigation{
+    grid-column-start: 3;
+    text-align: right;
     display: flex;
 	list-style: none;
     align-content: space-around;
@@ -111,7 +109,7 @@ footer img {
 }
 
 .navigation a:hover{
-    color: var(--secondary-color);
+    color: var(--primary-color);
 	font-weight: 700;
 	text-decoration: underline;
 }
@@ -139,15 +137,25 @@ footer img {
     position: absolute;
     bottom: 40px;
     background-color: var(--accent1-color);
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 80%;
-    left: 10%
+    left: 10%;
 }
 
 .stats img {
+    order: 2;
     float: right;
-    width: 30%;
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 25%;
     opacity: 100%;
+}
+
+.stats p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-self: center;
 }
 
 .history {
@@ -178,7 +186,12 @@ footer img {
 
 .group-images {
     display: grid;
+    margin: 3rem auto 3rem;
+	max-width: 1000px;
+    align-items: center;
+
     grid-template-rows: auto auto;
+    grid-template-columns: auto;
     justify-content: center;
 }
 
@@ -191,10 +204,14 @@ footer img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:center;
 }
 
 .group-images img {
     width: 15rem;
-    padding-left: 0;
+}
+
+div figure {
+    justify-items: center;
+    text-align: center;
 }
