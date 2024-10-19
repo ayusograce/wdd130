@@ -307,6 +307,7 @@ div figure {
     grid-column: 3;
     grid-row: 1/5;
     padding-top: 50px;
+    border: 0;
 }
 
 .information h2 {
