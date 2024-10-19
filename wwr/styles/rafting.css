@@ -3,6 +3,7 @@
     --secondary-color: #4464AD;
     --accent1-color: #FFFFFF;
     --accent2-color: #37392D;
+    --accent3-color: #ccc;
 }
 
 
@@ -42,7 +43,7 @@ header{
 	display: grid;
 	grid-template-columns: 0.5fr 1fr 2.5fr 0.5fr;
 	align-items: center;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid var(--accent3-color);
 	max-width: 1000px;
 }
 
@@ -88,6 +89,55 @@ footer nav {
 
 footer img {
     width: 45px;
+}
+
+form {
+    width: 450px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: grid;
+    text-align: left;
+    color: var(--accent2-color);
+    padding-bottom: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+label, input, button, select, textarea {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+label {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 5px;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border-color:var(--accent3-color);
+    border-width: 1px;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color:var(--accent2-color);
+    color: var(--accent1-color);
+    border-radius: .5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color:var(--primary-color);
 }
 
 /*Class Selectors*/
@@ -164,8 +214,8 @@ footer img {
     grid-template-rows: auto auto;
     align-items: center;
     margin: 3rem auto 3rem;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid var(--accent3-color);
+    border-bottom: 1px solid var(--accent3-color);
 	max-width: 1000px;
 }
 
@@ -214,4 +264,102 @@ footer img {
 div figure {
     justify-items: center;
     text-align: center;
+}
+
+.block {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-title {
+    background-color: var(--accent3-color);
+    padding-bottom: 5px;
+}
+
+.contact-title h1 {
+    padding-top: 2px;
+}
+
+
+.information {
+    display: grid;
+    padding-top: 3rem;
+    grid-template-columns: 50px 350px auto;
+    grid-template-rows: 55px 50px 50px 50px 100px;
+}
+
+.information img {
+    height: 45px;
+    grid-column: 1;
+    align-items: center;
+}
+
+.information p {
+    grid-column: 2;
+    text-align: left;
+    padding-left: 15px;
+
+}
+
+.map {
+    grid-column: 3;
+    grid-row: 1/5;
+    padding-top: 50px;
+}
+
+.information h2 {
+    grid-column: 1/2;
+    grid-row: 1;
+    padding-bottom: 10px;
+}
+
+.row-2 {
+    grid-row: 2;
+}
+
+.row-3 {
+    grid-row: 3;
+}
+
+.row-4 {
+    grid-row: 4;
+}
+
+.employees {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--accent3-color);
+}
+
+.top-separation {
+    padding-top: 10px;
+    border-top: 1px solid var(--accent3-color);
+}
+
+.options p{
+    padding-top: 5px;
+}
+
+.bold {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.newsletter-subscription {
+    padding: 7px;
+}
+
+.wireframe {
+    color: var(--accent1-color);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    grid-column: 1;
+    padding-top: 27px;
+}
+
+.wireframe:hover{
+    color: var(--primary-color);
 }
